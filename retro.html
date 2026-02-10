@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retro Station</title>
+    <style>
+        body { background: #000; color: white; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+        #game-container { width: 100%; max-width: 800px; height: 600px; }
+    </style>
+</head>
+<body>
+    <h1>Retro Station</h1>
+    <div id="game-container">
+        <div id="game"></div>
+    </div>
+
+    <script>
+        EJS_player = '#game';
+        EJS_core = 'nes'; // Change this for different consoles (gba, snes, etc.)
+        EJS_gameUrl = 'PASTE_DIRECT_LINK_TO_ROM_HERE'; // The link to your game file
+        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+    </script>
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+</body>
+</html>
